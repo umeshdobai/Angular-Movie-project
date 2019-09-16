@@ -1,0 +1,69 @@
+[
+ {
+      "movieID":1,
+      "movieName":"Article 15",
+      "movieStar":"Ayushman khurana",
+      "movieGenre":"Social issues",
+      "movieRating":4.3,
+      "movieImg":"https://m.media-amazon.com/images/M/MV5BZTI2NTFiMDMtZjQxNS00YjBkLWFhNWMtOTIyMzE5Yjc0ZTZiXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg"
+  },
+ {
+      "movieID":2,
+      "movieName":"Kesari",
+      "movieStar":"Akshya Kumar",
+      "movieGenre":"Action",
+      "movieRating":4.0,
+      "movieImg":"https://m.media-amazon.com/images/M/MV5BN2VlY2E2ZGMtNjRiMy00OWUwLWJmZmItYzIwNjcyODE2MDliXkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_.jpg"
+  },
+  {
+      "movieID":3,
+      "movieName":"Hamid",
+      "movieStar":"Talha Arshad",
+      "movieGenre":"Romantic",
+      "movieRating":4.0,
+      "movieImg":"https://timesofindia.indiatimes.com/photo/msid-67960990/67960990.jpg?resizemode=4"
+  },
+  {
+      "movieID":4,
+      "movieName":"Parmanu",
+      "movieStar":"John Abraham",
+      "movieGenre":"Patriotic",
+      "movieRating":4.5,
+      "movieImg":"https://i0.wp.com/www.sirfnews.com/wp-content/uploads/2018/05/Parmanu1.jpg?fit=1280%2C720&ssl=1"      
+
+  },
+  {
+      "movieID":5,
+      "movieName":"Uri",
+      "movieStar":"Vicky Kaushal",
+      "movieGenre":"Patriotic",
+      "movieRating":4.2,
+      "movieImg":"https://m.media-amazon.com/images/M/MV5BYjY4ODA1NzYtNTJlMS00YWI5LTg0Y2EtOWY2YmM3ZGI3ZTgzXkEyXkFqcGdeQXVyNjE1OTQ0NjA@._V1_UY268_CR2,0,182,268_AL__QL50.jpg"      
+
+  },
+  {
+      "movieID":6,
+      "movieName":"Kabir Singh",
+      "movieStar":"Sahid Kapoor",
+      "movieGenre":"Romantic",
+      "movieRating":3,
+      "movieImg":"https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Kabir_Singh.jpg/220px-Kabir_Singh.jpg"
+  },
+  {
+     "movieID":7,
+      "movieName":"Bharat",
+      "movieStar":"Slaman khan",
+      "movieGenre":"Patriotic",
+      "movieRating":4,
+      "movieImg":"https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Bharat_film_poster.jpg/220px-Bharat_film_poster.jpg" 
+  },
+  {
+      "movieID":8,
+      "movieName":"Total Dhamal",
+      "movieStar":"Ajay Devgan",
+      "movieGenre":"Comedy",
+      "movieRating":2.8,
+      "movieImg":"https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Total_Dhamaal_poster.jpg/220px-Total_Dhamaal_poster.jpg"
+  }
+
+        ]

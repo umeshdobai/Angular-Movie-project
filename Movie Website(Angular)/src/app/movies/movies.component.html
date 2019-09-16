@@ -1,0 +1,62 @@
+
+
+
+
+<!--image-->
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Kabir_Singh.jpg/220px-Kabir_Singh.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/URI_-_New_poster.jpg/220px-URI_-_New_poster.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Bharat_film_poster.jpg/220px-Bharat_film_poster.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Gully_Boy_poster.jpg/220px-Gully_Boy_poster.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Total_Dhamaal_poster.jpg/220px-Total_Dhamaal_poster.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Kesari_poster.jpg/220px-Kesari_poster.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Super_30_The_Film.jpg/220px-Super_30_The_Film.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Kalank_Poster.jpg/220px-Kalank_Poster.jpg" height="150" width="150">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Badla_poster.jpg/220px-Badla_poster.jpg" height="150" width="200">
+      </div>
+<!--image-->
+
+
+<div class="form-group has-search">
+  <br>
+  <input type="text" class="form-control" placeholder="search by movie name"
+                         autocomplete="off" style="width:300px" [(ngModel)]='movieSearch'/> 
+   
+</div>
+
+<div class='table-responsive'>
+            <table class='table'>
+              <thead>
+                <tr>
+                  <th>
+                    <button class='btn btn-primary'
+                            (click)='switchImg()'>
+                       {{showImg?'Hide':'Show'}}Image
+                    </button>
+                  </th>
+                  <th>Movie</th>
+                  <th>Actor</th>
+                  <th>Genre</th>
+                  <th>Rating(From 5 star)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor='let mov of searchedMovies'>
+                  <td>
+                    <img *ngIf='showImg'
+                         [src]='mov.movieImg'
+                         [title]='mov.MovieName'
+                         [style.width.px]='imgWidth'
+                         [style.height.px]='imgHeight'>
+                  </td>
+                  <td> <a [routerLink]="['/movie-details',mov.movieID]"> {{ mov.movieName }}</a></td>
+                  <td>{{ mov.movieStar }}</td>
+                  <td>{{ mov.movieGenre }}</td>
+                  <td>{{ mov.movieRating}}
+                    <rating [rating]='mov.movieRating'
+                    (ratingclick)='onRatingClicked($event)'></rating>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>

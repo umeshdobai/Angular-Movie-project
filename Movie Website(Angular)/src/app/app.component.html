@@ -1,0 +1,136 @@
+
+<!--Navbar-->
+<div id="body">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="../assets/image/image.jfif" width="45px" height="45px" id="navbar_img_logo">
+        
+
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li><a class="navbar-brand" href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"><i class="fa fa-film"></i>
+                      Movies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" [routerLink]="['/movies']">Bollywood</a>
+                             <a class="dropdown-item" href="#">Hollywood</a>
+                    </div>
+            </li>
+               <li class="nav-item active">
+                       <a class="navbar-brand" href="#" [routerLink]="['/movies']"><i class="fa fa-film"></i>Watch</a>
+                </li>
+                
+                <li class="nav-item active">
+                       <a class="navbar-brand" href="#" [routerLink]="['/aboutus']"><i class="fa fa-building"></i>About</a>
+                </li>
+                
+          </ul>
+          
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit" [routerLink]="['/movies']">Search</button>&nbsp;    
+             <button class="btn btn-outline-dark" type="submit" [routerLink]="['/login']">Login</button>
+    </form>
+  </div>
+</nav>
+<!--Navbar-->
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+<!-- Footer -->
+<div class="footer_div">
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <img src='./../assets/image/image.jfif' width="45px" height="45px" id="content_img">
+        <h5 class="text-uppercase">DU TV</h5>
+        <p>DU TV is always gives important on Entertainment.DU Television, Inc. is an American media-services provider headquartered in Los Gatos, California, founded in 1997 by Reed Hastings and Marc Randolph in Scotts Valley, California.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Quick Navigation</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">FAQ</a>
+          </li>
+          <li>
+            <a href="#!">Account</a>
+          </li>
+          <li>
+            <a href="#!">Coporate Information</a>
+          </li>
+          <li>
+            <a href="#!">Privacy</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Important Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">help Centre</a>
+          </li>
+          <li>
+            <a href="#!">Career</a>
+          </li>
+          <li>
+            <a href="#!">Terms of Use</a>
+          </li>
+          <li>
+            <a href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!">About Us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href=""> DU_Television.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</div>
+<!-- Footer -->
